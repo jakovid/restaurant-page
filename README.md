@@ -1,2 +1,3 @@
 # restaurant-page
-a website using modules, webpacks, and DOM manipulation
+
+a website using modules, webpacks, and javascript based DOM manipulation

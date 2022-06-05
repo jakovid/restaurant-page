@@ -1,1 +1,1 @@
-console.log("hello! this is a test");
+(()=>{"use strict";console.log("hello! this is not a test"),console.log("test")})();
