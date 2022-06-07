@@ -5,22 +5,21 @@ import { footer } from "./footer";
 
 (function() {
     var buildWebsite = {
-        content: document.getElementById('content'),
         init: function() {
-            this.cacheDom();
-            // this.bindEvents();
-            console.log('this is a big test');
             this.homePage();
+            this.cacheDom();
+            this.bindEvents();
+            console.log('this is a big test');
         },
         cacheDom: function() {
             this.el = document.getElementById('content');
-            this.homeTab = this.el.querySelector('homeTab');
-            this.menuTab = this.el.querySelector('menuTab');
-            this.contactTab = this.el.querySelector('contactTab')
+            this.homeTab = this.el.querySelector('.homeTab');
+            this.menuTab = this.el.querySelector('.menuTab');
+            this.contactTab = this.el.querySelector('.contactTab')
         },
         bindEvents: function(){
-            this.homeTab.onclick = buildWebsite.homePage;
-            this.menuTab.onclick = buildWebsite.menuPage;
+            this.homeTab.onclick = this.homePage();
+            this.menuTab.onclick = this.menuPage();
             // this.contactTab.onclick = 
         },
         homePage: function() {
