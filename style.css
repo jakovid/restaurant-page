@@ -34,3 +34,9 @@
     width: 50vw;
     height: 50vh;
 }
+
+/* menu.js style */
+
+.foodPic {
+    height: 4rem;
+}
