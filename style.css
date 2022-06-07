@@ -1,10 +1,20 @@
+* {
+    margin: 0;
+}
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
 
 /* header.js css */
 .headerContainer {
     background-color: black;
     color: white;
-    text-align: center;
     display: flex;
+    width: 100vw;
     flex-direction: column;
     gap: 0.5rem;
     padding: 1rem;
@@ -12,4 +22,15 @@
 
 .headerTitle {
     font-size: 3rem;
+}
+
+/* home.js style changes */
+.bodyContainer {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 50vh;
 }
