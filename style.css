@@ -31,7 +31,7 @@
     background-color: lightblue;
     display: flex;
     flex-direction: column;
-    width: 50vw;
+    width: 70vw;
     height: 50vh;
 }
 
@@ -39,7 +39,17 @@
 .menuContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
+    background-color: lightblue;
+    width: 70vh;
+    padding: 1rem;
+}
+
+.foodBox {
+    background-color: darkblue;
+    width: auto;
+    padding: 0.5rem;
+    color: wheat;
+    margin: 1rem;
 }
 
 .foodPic {

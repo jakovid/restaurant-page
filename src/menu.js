@@ -14,9 +14,21 @@ var loadMenuPage = {
         let saladPic = document.createElement('img');
         let saladName = document.createElement('div');
         let saladAbout = document.createElement('div');
+        //create steak
+        let steakBox = document.createElement('div');
+        let steakPic = document.createElement('img');
+        let steakName = document.createElement('div');
+        let steakAbout = document.createElement('div');
+        //create steak
+        let tiramisuBox = document.createElement('div');
+        let tiramisuPic = document.createElement('img');
+        let tiramisuName = document.createElement('div');
+        let tiramisuAbout = document.createElement('div');
         //add src for pictues
         friesPic.src = '../img/fries.png';
         saladPic.src = '../img/salad.png';
+        steakPic.src = '../img/steak.png';
+        tiramisuPic.src = '../img/tiramisu.png';
 
         //add class names to elements
         menuContainer.className = 'menuContainer';
@@ -29,16 +41,29 @@ var loadMenuPage = {
         saladPic.className = "foodPic";
         saladName.className = "foodName";
         saladAbout.className = "foodAbout";
+        steakBox.className = "foodBox";
+        steakPic.className = "foodPic";
+        steakName.className = "foodName";
+        steakAbout.className = "foodAbout";
+        tiramisuBox.className = "foodBox";
+        tiramisuPic.className = "foodPic";
+        tiramisuName.className = "foodName";
+        tiramisuAbout.className = "foodAbout";
         //add innertext to elements
         friesName.innerText = "Garlic Fries";
         friesAbout.innerText = "Fresh cut spuds"
         saladName.innerText = "Green Goddess Salad";
         saladAbout.innerText = "You've seen this one too many times on tiki toki";
-
+        steakName.innerText = "Rosemary Steak";
+        steakAbout.innerText = "Choice sirloin basted in rosemary, garlic, and butter"
+        tiramisuName.innerText = "Tiramisu";
+        tiramisuAbout.innerText = "Layers of espresso soaked ladyfingers, whipped marscapone and cream, and chocolate";
         //append elements
         friesBox.append(friesPic,friesName,friesAbout);
         saladBox.append(saladPic,saladName,saladAbout);
-        menuContainer.append(friesBox,saladBox);
+        steakBox.append(steakPic,steakName,steakAbout);
+        tiramisuBox.append(tiramisuPic,tiramisuName,tiramisuAbout);
+        menuContainer.append(friesBox,saladBox,steakBox,tiramisuBox);
         this.content.appendChild(menuContainer);
         console.log('Menu Test!');
         
