@@ -1,3 +1,15 @@
-.test {
-    color: red;
+
+/* header.js css */
+.headerContainer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.headerTitle {
+    font-size: 3rem;
 }

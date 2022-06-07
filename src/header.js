@@ -1,3 +1,5 @@
+import { loadMenuPage } from "./menu";
+
 var header = {
     content: document.getElementById('content'),
     buildHeader: function() {
