@@ -36,6 +36,11 @@
 }
 
 /* menu.js style */
+.menuContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
 
 .foodPic {
     height: 4rem;

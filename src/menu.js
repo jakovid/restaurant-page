@@ -16,6 +16,7 @@ var loadMenuPage = {
         let saladAbout = document.createElement('div');
         //add src for pictues
         friesPic.src = '../img/fries.png';
+        saladPic.src = '../img/salad.png';
 
         //add class names to elements
         menuContainer.className = 'menuContainer';
@@ -24,6 +25,10 @@ var loadMenuPage = {
         friesPic.className = "foodPic";
         friesName.className = "foodName";
         friesAbout.className = "foodAbout";
+        saladBox.className = "foodBox";
+        saladPic.className = "foodPic";
+        saladName.className = "foodName";
+        saladAbout.className = "foodAbout";
         //add innertext to elements
         friesName.innerText = "Garlic Fries";
         friesAbout.innerText = "Fresh cut spuds"
