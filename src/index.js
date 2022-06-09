@@ -1,5 +1,6 @@
 import { loadHomePage } from "./home";
 import { loadMenuPage } from "./menu";
+import { loadContactPage } from "./contact";
 import { header } from "./header";
 import { footer } from "./footer";
 
@@ -20,7 +21,7 @@ import { footer } from "./footer";
         bindEvents: function(){
             this.homeTab.onclick = this.homePage;
             this.menuTab.onclick = this.menuPage;
-            // this.contactTab.onclick = 
+            this.contactTab.onclick = this.contactPage;
         },
         homePageInit: function() {
             header.buildHeader();
@@ -39,6 +40,14 @@ import { footer } from "./footer";
             buildWebsite.el.innerHTML = '';
             header.buildHeader();
             loadMenuPage.buildMenuPage();
+            footer.buildFooter();
+            buildWebsite.cacheDom();
+            buildWebsite.bindEvents();
+        },
+        contactPage: function() {
+            buildWebsite.el.innerHTML = '';
+            header.buildHeader();
+            loadContactPage.buildContactPage();
             footer.buildFooter();
             buildWebsite.cacheDom();
             buildWebsite.bindEvents();
