@@ -57,7 +57,7 @@ var loadMenuPage = {
         steakName.innerText = "Rosemary Steak";
         steakAbout.innerText = "Choice sirloin basted in rosemary, garlic, and butter"
         tiramisuName.innerText = "Tiramisu";
-        tiramisuAbout.innerText = "Layers of espresso soaked ladyfingers, whipped marscapone and cream, and chocolate";
+        tiramisuAbout.innerText = "It tastes just like putting a Chanel bag in your mouth";
         //append elements
         friesBox.append(friesPic,friesName,friesAbout);
         saladBox.append(saladPic,saladName,saladAbout);
