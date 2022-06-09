@@ -24,6 +24,20 @@
     font-size: 3rem;
 }
 
+/* footer.js style */
+
+.footerContainer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* home.js style changes */
 .bodyContainer {
     margin: 1rem;
@@ -50,6 +64,14 @@
     padding: 0.5rem;
     color: wheat;
     margin: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 0.5rem;
+}
+
+.foodName {
+    font-size: 1.5rem;
 }
 
 .foodPic {
