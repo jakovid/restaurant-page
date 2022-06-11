@@ -7,6 +7,8 @@ var loadHomePage = {
         let bodyTagline = document.createElement('div');
         let bodyImage = document.createElement('img');
         let bodyCallToAction = document.createElement('div');
+        //add src to image
+        // bodyImage.src = '../img/chef.png';
         //add class names to elements
         bodyContainer.className = "bodyContainer";
         bodyTitle.className = "bodyTitle";

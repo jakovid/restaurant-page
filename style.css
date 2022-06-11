@@ -18,6 +18,7 @@
     flex-direction: column;
     gap: 0.5rem;
     padding: 1rem;
+    margin-bottom: 2rem;
 }
 
 .headerTitle {
@@ -36,6 +37,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 2rem;
 }
 
 /* home.js style changes */
@@ -43,10 +45,15 @@
     margin: 1rem;
     padding: 1rem;
     background-color: lightblue;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     width: 70vw;
     height: 50vh;
+}
+
+.bodyImage {
+    width: 2rem;
+    background-color: white;
 }
 
 /* menu.js style */
